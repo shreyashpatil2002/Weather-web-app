@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="shreyash patil">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="https://cdn.jim-nielsen.com/ios/512/weather-2021-12-07.png" type="image/x-icon">
+    <title>Weather - IN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h1>Weather.IO</h1>
+        </div>
+        <div class="searchBar">
+            <div class="form">
+                <ion-icon name="search-outline" id="searchIcon"></ion-icon>
+                <input type="text" name="location" id="location" placeholder="Enter Location" autocomplete="off"
+                    spellcheck="false" required>
+                <input type="button" value="search" id="LocationSearchBtn">
+            </div>
+            <div class="suggestions" id="suggestions">
+            </div>
+        </div>
+        <div id="account">
+            <button>Login</button>
+        </div>
+    </nav>
+    <main>
+        <div class="spinner"><img src="SVGImages/spinner.svg" alt=""></div>
+        <div class="mainDetails">
+            <div class="left-side"></div>
+            <div class="right-side"></div>
+        </div>
+    </main>
+
+
+    <script src="app.js"></script>
+    <script src="citiesName.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
