@@ -131,7 +131,7 @@ function GetTheWetherInformation(citySearched) {
                 </div>`;
 
       fetch(
-        `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`
+        `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`
       )
         .then((response) => response.json())
         .then((airData) => {
